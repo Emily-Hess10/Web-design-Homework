@@ -1,0 +1,38 @@
+
+
+
+
+.highlight{
+background-color: yellow
+}
+
+#header{
+	font-size: 60 px;
+	font-weight: bold
+}
+body{
+	background: blue;
+	color: yellow
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+
+header {
+	color: blue;
+	font-family: sans-serif, serif;
+	background:white
+	
+}
+
+p {
+	color: blue;
+	font-family: serif, sans-serif;
+	font-size: 30 px;
+}
+
