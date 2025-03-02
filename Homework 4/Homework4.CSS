@@ -1,0 +1,186 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Webpage</title>
+    <style>
+        body {
+            background: blue;
+            color: yellow;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        #header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+        }
+        
+        #header h1 {
+            margin: 10px 0;
+            padding: 5px;
+            border: 3px dashed blue;
+            font-size: 40px;
+            font-weight: bold;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+        }
+        
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        
+        .item {
+            background: white;
+            color: blue;
+            padding: 20px;
+            margin: 10px;
+            border: 3px dashed black;
+            text-align: center;
+        }
+        
+        img {
+            width: 100%;
+            max-width: 300px;
+            display: block;
+            margin: 0 auto;
+        }
+        
+        img:active {
+            background-color: yellow;
+        }
+        
+        .highlight {
+            background-color: yellow;
+        }
+        
+        .table-container {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            margin: 20px 0;
+        }
+        
+        table {
+            width: 80%;
+            border-collapse: collapse;
+        }
+        
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        
+        tr:hover {
+            background-color: #f2f2f2;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: white;
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            nav ul li {
+                margin: 5px 0;
+            }
+        }
+        
+        @media (max-width: 1024px) {
+            .container {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 10px;
+            }
+        }
+        
+        @media (min-width: 1025px) {
+            .container {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <h1>My Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <div class="item"><p>Welcome to my responsive website.</p></div>
+        <div class="item"><img srcset="low-res.jpg 600w, high-res.jpg 1200w" src="high-res.jpg" alt="Responsive Image"></div>
+        <div class="item"><p class="highlight">This is a highlighted text section.</p></div>
+        <div class="item">
+            <div class="table-container">
+                <table>
+                    <tr>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>City</th>
+                    </tr>
+                    <tr>
+                        <td>John</td>
+                        <td>25</td>
+                        <td>New York</td>
+                    </tr>
+                    <tr>
+                        <td>Jane</td>
+                        <td>28</td>
+                        <td>Los Angeles</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 My Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>
