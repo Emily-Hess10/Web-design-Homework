@@ -1,0 +1,42 @@
+body {
+    font-family: Comic Sans MS, cursive, sans-serif;
+    background-color: lightblue;
+    text-align: center;
+}
+
+h1 {
+    color: darkblue;
+}
+
+input {
+    width: 200px;
+    padding: 5px;
+}
+
+button {
+    padding: 5px 10px;
+    background-color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: grey;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: white;
+    margin: 5px auto;
+    padding: 5px;
+    border: 1px solid black;
+    width: 250px;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
