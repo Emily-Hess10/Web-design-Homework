@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Admin</title>
+  <link rel="stylesheet" href="Homework 9.CSS">
+</head>
+<body>
+  <h1>Contact Site Admin</h1>
+  <form id="contactForm">
+    <label>
+      Name:
+      <input type="text" id="name" name="name">
+      <p id="nameError" class="error">Please include first and last name</p>
+    </label>
+
+    <label>
+      Email:
+      <input type="email" id="email" name="email">
+      <p id="emailError" class="error">Please enter a valid email address</p>
+    </label>
+
+    <label>
+      Message:
+      <textarea id="message" name="message" maxlength="300"></textarea>
+      <p id="messageError" class="error">Message cannot be blank and must be 300 characters or fewer</p>
+    </label>
+
+    <button type="submit">Send</button>
+  </form>
+
+  <script src="Homework 9.js"></script>
+</body>
+</html>
+s
